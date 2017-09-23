@@ -12,7 +12,7 @@ self.addEventListener('activate', function (event) {
 
 self.addEventListener('fetch', function (event) {
     console.log('[SW] Fetching...', event);
-    event.respondWith(fetch(event.response));
+    event.respondWith(fetch(event.request));
 });
 
 
